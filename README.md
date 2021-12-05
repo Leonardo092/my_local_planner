@@ -40,5 +40,5 @@ This package runs two main scenarios:
    of the planner can be tested (setting a goal and watch the robot move in the costmap).
    
 - `$roslaunch my_local_planner my_navigation_obstacles.launch` launches a map filled with "unregistered obstacles" (static obstacles not saved in the costmap").
-   In order to simulate a stuck behaviour, run `$roslaunch my_local_planner my_navigation.launch `$rosrun rqt_reconfigure rqt_reconfigure`, access the  **obstacle_layer** session under **move_base/global_costmap** and disable it by unticking the "enabled" field. In this way the global planner will be unaware of obstacles that are not in saved in the costmap (refer to `Gazebo` for choosing your goal destination so that the robot gets stuck)
+   In order to simulate a stuck behaviour, execute `$rosrun rqt_reconfigure rqt_reconfigure`, access the  **obstacle_layer** session under **move_base/global_costmap** and disable it by unticking the "enabled" field. In this way the global planner will be unaware of obstacles that are not in saved in the costmap (refer to `Gazebo` for choosing your goal destination so that the robot gets stuck)
 
