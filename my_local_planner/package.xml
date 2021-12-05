@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>my_local_planner</name>
+    <version>1.2.5</version>
+    <description>
+        This package provides a local planner that interfaces with nav_core::BaseLocalPlanner API.
+    </description>
+    <author>Leonardo Stretti</author>
+    <maintainer email="leonardo.stretti92@gmail.com"></maintainer>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>base_local_planner</build_depend>
+    <build_depend>costmap_2d</build_depend>
+    <build_depend>dynamic_reconfigure</build_depend>
+    <build_depend>nav_core</build_depend>
+    <build_depend>nav_msgs</build_depend>
+    <build_depend>pluginlib</build_depend>
+    <build_depend>roscpp</build_depend>
+    <build_depend>tf2_ros</build_depend>
+
+    <exec_depend>base_local_planner</exec_depend>
+    <exec_depend>costmap_2d</exec_depend>
+    <exec_depend>dynamic_reconfigure</exec_depend>
+    <exec_depend>nav_core</exec_depend>
+    <exec_depend>nav_msgs</exec_depend>
+    <exec_depend>pluginlib</exec_depend>
+    <exec_depend>roscpp</exec_depend>
+    <exec_depend>tf2_ros</exec_depend>
+
+    <exec_depend>amcl</exec_depend>
+    <exec_depend>map_server</exec_depend>
+    <exec_depend>move_base</exec_depend>
+    <exec_depend>turtlebot3_bringup</exec_depend>
+
+    <export>
+        <nav_core plugin="${prefix}/mlp_plugin.xml" />
+    </export>
+
+</package>
+
+
